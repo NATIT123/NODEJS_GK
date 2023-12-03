@@ -1,0 +1,31 @@
+<link href="css/style.css"  type="text/css"  rel="stylesheet">
+<script defer src="js/app.js"></script>
+<main>
+            <div class="left_list">
+
+                <p class="user-list" style="display:" ></p>
+
+                <p class="room-list"></p>
+
+                <p class="activity"></p>
+            </div>
+            <div class="right_list">
+                <div class="chat_area">
+                    <form class="form-join">
+                        <input type="text" id="name"  placeholder="Enter your name" value="{{username}}"  required>
+                        <input type="text" id="room" placeholder="Chat room" size="20" required>
+                        <button id="join" type="submit">Join</button>
+                    </form>
+            
+                    <ul class="chat-display"></ul>
+
+                    <form class="form-msg" method="post" action="/index/send">
+                        <input type="text" id="message" placeholder="Your message" required>
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                </div>
+            
+            </div>
+        <!-- </div> -->
+    </main>
